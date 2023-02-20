@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+{% load extrafilter %}
+{% block body_block %}
+<div class="container">
+    <h1>WELCOME to HOME!</h1>
+    <h2>AKA index </h2>
+    <p>{{text|wow}}</p>
+    <p>{{number|mod:7}}</p>
+</div>
+{% endblock %}
